@@ -6,7 +6,7 @@ class NetworkClientTests: XCTestCase {
     func testEndpoint() {
         let jsonDecoder = JSONDecoder()
         jsonDecoder.keyDecodingStrategy = .convertFromSnakeCase
-        let expectedResponse = try! jsonDecoder.decode([Item].self, from: expectedResponseData)
+        let expectedResponse = try! jsonDecoder.decode([ToastCatalogItem].self, from: expectedResponseData)
 
         let networkClient = NetworkClient()
         networkClient.getItems { result in

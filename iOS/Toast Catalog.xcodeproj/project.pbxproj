@@ -9,17 +9,20 @@
 /* Begin PBXBuildFile section */
 		138B497729068E41008295A1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 138B497629068E41008295A1 /* AppDelegate.swift */; };
 		138B497929068E41008295A1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 138B497829068E41008295A1 /* SceneDelegate.swift */; };
-		138B497B29068E41008295A1 /* ItemsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 138B497A29068E41008295A1 /* ItemsViewController.swift */; };
+		138B497B29068E41008295A1 /* ToastCatalogViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 138B497A29068E41008295A1 /* ToastCatalogViewController.swift */; };
 		138B498029068E43008295A1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 138B497F29068E43008295A1 /* Assets.xcassets */; };
 		138B498329068E43008295A1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 138B498129068E43008295A1 /* LaunchScreen.storyboard */; };
 		138B499829068E43008295A1 /* Toast_CatalogUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 138B499729068E43008295A1 /* Toast_CatalogUITests.swift */; };
 		138B499A29068E43008295A1 /* Toast_CatalogUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 138B499929068E43008295A1 /* Toast_CatalogUITestsLaunchTests.swift */; };
-		138B49AA2906959E008295A1 /* ItemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 138B49A82906959E008295A1 /* ItemTableViewCell.swift */; };
-		138B49AB2906959E008295A1 /* ItemTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 138B49A92906959E008295A1 /* ItemTableViewCell.xib */; };
-		138B49AD29069997008295A1 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 138B49AC29069997008295A1 /* Item.swift */; };
-		138B49B12906B6CC008295A1 /* ImageRepository.m in Sources */ = {isa = PBXBuildFile; fileRef = 138B49B02906B6CC008295A1 /* ImageRepository.m */; };
-		138B49B32906BB6B008295A1 /* NetworkClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 138B49B22906BB6B008295A1 /* NetworkClient.swift */; };
+		138B49AD29069997008295A1 /* ToastCatalogItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 138B49AC29069997008295A1 /* ToastCatalogItem.swift */; };
 		138B49B52906BC25008295A1 /* NetworkClientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 138B49B42906BC25008295A1 /* NetworkClientTests.swift */; };
+		7B4560552A327FF800798505 /* DateFormatter+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B4560542A327FF800798505 /* DateFormatter+Extension.swift */; };
+		7B7672A22A2ABA5500A4E8DD /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B7672A12A2ABA5500A4E8DD /* Endpoint.swift */; };
+		7B7672A52A2ABB9800A4E8DD /* RequestMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B7672A42A2ABB9800A4E8DD /* RequestMethod.swift */; };
+		7B7672A72A2ABC1E00A4E8DD /* RequestError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B7672A62A2ABC1E00A4E8DD /* RequestError.swift */; };
+		7B7672A92A2ABD8200A4E8DD /* HTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B7672A82A2ABD8200A4E8DD /* HTTPClient.swift */; };
+		7B7672AC2A2AC25400A4E8DD /* ToastCatalogEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B7672AB2A2AC25400A4E8DD /* ToastCatalogEndpoint.swift */; };
+		7B7672B02A2AC3E700A4E8DD /* ToastCatalogService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B7672AF2A2AC3E700A4E8DD /* ToastCatalogService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,7 +46,7 @@
 		138B497329068E41008295A1 /* Toast Catalog.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Toast Catalog.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		138B497629068E41008295A1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		138B497829068E41008295A1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		138B497A29068E41008295A1 /* ItemsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemsViewController.swift; sourceTree = "<group>"; };
+		138B497A29068E41008295A1 /* ToastCatalogViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToastCatalogViewController.swift; sourceTree = "<group>"; };
 		138B497F29068E43008295A1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		138B498229068E43008295A1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		138B498429068E43008295A1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -51,13 +54,15 @@
 		138B499329068E43008295A1 /* Toast CatalogUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Toast CatalogUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		138B499729068E43008295A1 /* Toast_CatalogUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Toast_CatalogUITests.swift; sourceTree = "<group>"; };
 		138B499929068E43008295A1 /* Toast_CatalogUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Toast_CatalogUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		138B49A82906959E008295A1 /* ItemTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemTableViewCell.swift; sourceTree = "<group>"; };
-		138B49A92906959E008295A1 /* ItemTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ItemTableViewCell.xib; sourceTree = "<group>"; };
-		138B49AC29069997008295A1 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
-		138B49AF2906B6CC008295A1 /* ImageRepository.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ImageRepository.h; sourceTree = "<group>"; };
-		138B49B02906B6CC008295A1 /* ImageRepository.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ImageRepository.m; sourceTree = "<group>"; };
-		138B49B22906BB6B008295A1 /* NetworkClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkClient.swift; sourceTree = "<group>"; };
+		138B49AC29069997008295A1 /* ToastCatalogItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToastCatalogItem.swift; sourceTree = "<group>"; };
 		138B49B42906BC25008295A1 /* NetworkClientTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkClientTests.swift; sourceTree = "<group>"; };
+		7B4560542A327FF800798505 /* DateFormatter+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DateFormatter+Extension.swift"; sourceTree = "<group>"; };
+		7B7672A12A2ABA5500A4E8DD /* Endpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
+		7B7672A42A2ABB9800A4E8DD /* RequestMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestMethod.swift; sourceTree = "<group>"; };
+		7B7672A62A2ABC1E00A4E8DD /* RequestError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestError.swift; sourceTree = "<group>"; };
+		7B7672A82A2ABD8200A4E8DD /* HTTPClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPClient.swift; sourceTree = "<group>"; };
+		7B7672AB2A2AC25400A4E8DD /* ToastCatalogEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToastCatalogEndpoint.swift; sourceTree = "<group>"; };
+		7B7672AF2A2AC3E700A4E8DD /* ToastCatalogService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToastCatalogService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,13 +115,11 @@
 			children = (
 				138B497629068E41008295A1 /* AppDelegate.swift */,
 				138B497829068E41008295A1 /* SceneDelegate.swift */,
-				138B49AC29069997008295A1 /* Item.swift */,
-				138B49B22906BB6B008295A1 /* NetworkClient.swift */,
-				138B497A29068E41008295A1 /* ItemsViewController.swift */,
-				138B49A82906959E008295A1 /* ItemTableViewCell.swift */,
-				138B49A92906959E008295A1 /* ItemTableViewCell.xib */,
-				138B49AF2906B6CC008295A1 /* ImageRepository.h */,
-				138B49B02906B6CC008295A1 /* ImageRepository.m */,
+				7B4560522A327FBA00798505 /* Model */,
+				7B7672AE2A2AC3C500A4E8DD /* Service */,
+				7B7672AD2A2AC25700A4E8DD /* ToastCatalogEndpoint */,
+				7B7672A32A2ABB8000A4E8DD /* Network */,
+				138B497A29068E41008295A1 /* ToastCatalogViewController.swift */,
 				138B497F29068E43008295A1 /* Assets.xcassets */,
 				138B498129068E43008295A1 /* LaunchScreen.storyboard */,
 				138B498429068E43008295A1 /* Info.plist */,
@@ -139,6 +142,58 @@
 				138B499929068E43008295A1 /* Toast_CatalogUITestsLaunchTests.swift */,
 			);
 			path = "Toast CatalogUITests";
+			sourceTree = "<group>";
+		};
+		7B4560522A327FBA00798505 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				138B49AC29069997008295A1 /* ToastCatalogItem.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		7B4560532A327FCB00798505 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				7B4560542A327FF800798505 /* DateFormatter+Extension.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		7B7672A32A2ABB8000A4E8DD /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				7B7672AA2A2ABD8500A4E8DD /* HTTP */,
+				7B7672A12A2ABA5500A4E8DD /* Endpoint.swift */,
+				7B7672A42A2ABB9800A4E8DD /* RequestMethod.swift */,
+				7B7672A62A2ABC1E00A4E8DD /* RequestError.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		7B7672AA2A2ABD8500A4E8DD /* HTTP */ = {
+			isa = PBXGroup;
+			children = (
+				7B4560532A327FCB00798505 /* Helper */,
+				7B7672A82A2ABD8200A4E8DD /* HTTPClient.swift */,
+			);
+			path = HTTP;
+			sourceTree = "<group>";
+		};
+		7B7672AD2A2AC25700A4E8DD /* ToastCatalogEndpoint */ = {
+			isa = PBXGroup;
+			children = (
+				7B7672AB2A2AC25400A4E8DD /* ToastCatalogEndpoint.swift */,
+			);
+			path = ToastCatalogEndpoint;
+			sourceTree = "<group>";
+		};
+		7B7672AE2A2AC3C500A4E8DD /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				7B7672AF2A2AC3E700A4E8DD /* ToastCatalogService.swift */,
+			);
+			path = Service;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -248,7 +303,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				138B498329068E43008295A1 /* LaunchScreen.storyboard in Resources */,
-				138B49AB2906959E008295A1 /* ItemTableViewCell.xib in Resources */,
 				138B498029068E43008295A1 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -274,12 +328,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				138B49AD29069997008295A1 /* Item.swift in Sources */,
-				138B49AA2906959E008295A1 /* ItemTableViewCell.swift in Sources */,
-				138B497B29068E41008295A1 /* ItemsViewController.swift in Sources */,
-				138B49B12906B6CC008295A1 /* ImageRepository.m in Sources */,
-				138B49B32906BB6B008295A1 /* NetworkClient.swift in Sources */,
+				138B49AD29069997008295A1 /* ToastCatalogItem.swift in Sources */,
+				7B7672A22A2ABA5500A4E8DD /* Endpoint.swift in Sources */,
+				138B497B29068E41008295A1 /* ToastCatalogViewController.swift in Sources */,
+				7B7672AC2A2AC25400A4E8DD /* ToastCatalogEndpoint.swift in Sources */,
+				7B7672A72A2ABC1E00A4E8DD /* RequestError.swift in Sources */,
+				7B7672B02A2AC3E700A4E8DD /* ToastCatalogService.swift in Sources */,
+				7B7672A92A2ABD8200A4E8DD /* HTTPClient.swift in Sources */,
 				138B497729068E41008295A1 /* AppDelegate.swift in Sources */,
+				7B7672A52A2ABB9800A4E8DD /* RequestMethod.swift in Sources */,
+				7B4560552A327FF800798505 /* DateFormatter+Extension.swift in Sources */,
 				138B497929068E41008295A1 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
