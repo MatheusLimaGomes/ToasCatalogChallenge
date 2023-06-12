@@ -6,7 +6,10 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
         window = UIWindow()
         window?.windowScene = scene as? UIWindowScene
-        window?.rootViewController = ItemsViewController()
+        let presenter = ToastCatalogPresenter(service: ToastCatalogAdapter())
+        let itemsViewController = ItemsViewController()
+        itemsViewController.presenter = presenter
+        window?.rootViewController = itemsViewController
         window?.makeKeyAndVisible()
     }
 }

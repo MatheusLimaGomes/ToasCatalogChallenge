@@ -3,21 +3,26 @@ import XCTest
 
 class NetworkClientTests: XCTestCase {
 
-    func testEndpoint() {
+    func testEndpoint() async {
         let jsonDecoder = JSONDecoder()
         jsonDecoder.keyDecodingStrategy = .convertFromSnakeCase
-        let expectedResponse = try! jsonDecoder.decode([Item].self, from: expectedResponseData)
+        let expectedResponse = try! jsonDecoder.decode([ToastCatalogItem].self, from: expectedResponseData)
 
-        let networkClient = NetworkClient()
-        networkClient.getItems { result in
-            guard case let .success(items) = result else {
-                XCTFail()
-                return
-            }
-            XCTAssertEqual(expectedResponse, items)
+        let networkClient = ToastCatalogAdapterSpy()
+        let result = await networkClient.getItems()
+        let items = try? result.get()
+        XCTAssertEqual(expectedResponse, items)
         }
-    }
 
+}
+class ToastCatalogAdapterSpy: ToastCatalogServiceable {
+    func getItems() async -> Result<[Toast_Catalog.ToastCatalogItem], Toast_Catalog.RequestError> {
+        return .success([
+            ToastCatalogItem(name: "Avocado Toast", price: "5.99", id: 1),
+            ToastCatalogItem(name: "Bacon Toast", price: "1.99", id: 2),
+            ToastCatalogItem(name: "Crunchy Toast", price: "0.99", id: 3)
+                        ])
+    }
 }
 
 private let expectedResponseData = """
