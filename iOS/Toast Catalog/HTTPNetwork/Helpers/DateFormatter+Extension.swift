@@ -1,5 +1,5 @@
 //
-//  DateFormatter+Extensions.swift
+//  DateFormatter+Extension.swift
 //  Toast Catalog
 //
 //  Created by Matheus F S L Gomes on 12/06/23.

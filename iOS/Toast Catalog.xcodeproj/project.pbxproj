@@ -14,18 +14,22 @@
 		138B498329068E43008295A1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 138B498129068E43008295A1 /* LaunchScreen.storyboard */; };
 		138B499829068E43008295A1 /* Toast_CatalogUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 138B499729068E43008295A1 /* Toast_CatalogUITests.swift */; };
 		138B499A29068E43008295A1 /* Toast_CatalogUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 138B499929068E43008295A1 /* Toast_CatalogUITestsLaunchTests.swift */; };
-		138B49AA2906959E008295A1 /* ItemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 138B49A82906959E008295A1 /* ItemTableViewCell.swift */; };
-		138B49AB2906959E008295A1 /* ItemTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 138B49A92906959E008295A1 /* ItemTableViewCell.xib */; };
 		138B49AD29069997008295A1 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 138B49AC29069997008295A1 /* Item.swift */; };
-		138B49B12906B6CC008295A1 /* ImageRepository.m in Sources */ = {isa = PBXBuildFile; fileRef = 138B49B02906B6CC008295A1 /* ImageRepository.m */; };
 		138B49B32906BB6B008295A1 /* ToastCatalogAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 138B49B22906BB6B008295A1 /* ToastCatalogAdapter.swift */; };
 		138B49B52906BC25008295A1 /* NetworkClientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 138B49B42906BC25008295A1 /* NetworkClientTests.swift */; };
 		7B45607B2A378F5100798505 /* HTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B45607A2A378F5100798505 /* HTTPClient.swift */; };
 		7B45607D2A378FB400798505 /* RequestError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B45607C2A378FB400798505 /* RequestError.swift */; };
 		7B4560862A3791C600798505 /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B4560852A3791C600798505 /* Endpoint.swift */; };
 		7B4560882A37920000798505 /* RequestMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B4560872A37920000798505 /* RequestMethod.swift */; };
-		7B45608A2A37926600798505 /* DateFormatter+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B4560892A37926600798505 /* DateFormatter+Extensions.swift */; };
+		7B45608A2A37926600798505 /* DateFormatter+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B4560892A37926600798505 /* DateFormatter+Extension.swift */; };
 		7B45608D2A379E6A00798505 /* ToastCatalogEndpointTypePath.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B45608C2A379E6A00798505 /* ToastCatalogEndpointTypePath.swift */; };
+		7B4560922A37A9FF00798505 /* Locale+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B4560912A37A9FF00798505 /* Locale+Extension.swift */; };
+		7B4560952A37B0BB00798505 /* ToastCatalogPresenterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B4560942A37B0BB00798505 /* ToastCatalogPresenterProtocol.swift */; };
+		7B4560982A37B0F400798505 /* ToastCatalogPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B4560972A37B0F400798505 /* ToastCatalogPresenter.swift */; };
+		7B45609A2A37B16100798505 /* ToastItemViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B4560992A37B16100798505 /* ToastItemViewModel.swift */; };
+		7B45609C2A37B65200798505 /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B45609B2A37B65200798505 /* String+Extension.swift */; };
+		7B4560A02A37C70000798505 /* DateFormatter+ExtensionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B45609F2A37C70000798505 /* DateFormatter+ExtensionTests.swift */; };
+		7B49B4D22A39D86A0062670F /* ImageRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B49B4D12A39D86A0062670F /* ImageRepository.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,19 +61,22 @@
 		138B499329068E43008295A1 /* Toast CatalogUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Toast CatalogUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		138B499729068E43008295A1 /* Toast_CatalogUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Toast_CatalogUITests.swift; sourceTree = "<group>"; };
 		138B499929068E43008295A1 /* Toast_CatalogUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Toast_CatalogUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		138B49A82906959E008295A1 /* ItemTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemTableViewCell.swift; sourceTree = "<group>"; };
-		138B49A92906959E008295A1 /* ItemTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ItemTableViewCell.xib; sourceTree = "<group>"; };
 		138B49AC29069997008295A1 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
-		138B49AF2906B6CC008295A1 /* ImageRepository.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ImageRepository.h; sourceTree = "<group>"; };
-		138B49B02906B6CC008295A1 /* ImageRepository.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ImageRepository.m; sourceTree = "<group>"; };
 		138B49B22906BB6B008295A1 /* ToastCatalogAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToastCatalogAdapter.swift; sourceTree = "<group>"; };
 		138B49B42906BC25008295A1 /* NetworkClientTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkClientTests.swift; sourceTree = "<group>"; };
 		7B45607A2A378F5100798505 /* HTTPClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPClient.swift; sourceTree = "<group>"; };
 		7B45607C2A378FB400798505 /* RequestError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestError.swift; sourceTree = "<group>"; };
 		7B4560852A3791C600798505 /* Endpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
 		7B4560872A37920000798505 /* RequestMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestMethod.swift; sourceTree = "<group>"; };
-		7B4560892A37926600798505 /* DateFormatter+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DateFormatter+Extensions.swift"; sourceTree = "<group>"; };
+		7B4560892A37926600798505 /* DateFormatter+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DateFormatter+Extension.swift"; sourceTree = "<group>"; };
 		7B45608C2A379E6A00798505 /* ToastCatalogEndpointTypePath.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToastCatalogEndpointTypePath.swift; sourceTree = "<group>"; };
+		7B4560912A37A9FF00798505 /* Locale+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Locale+Extension.swift"; sourceTree = "<group>"; };
+		7B4560942A37B0BB00798505 /* ToastCatalogPresenterProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToastCatalogPresenterProtocol.swift; sourceTree = "<group>"; };
+		7B4560972A37B0F400798505 /* ToastCatalogPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToastCatalogPresenter.swift; sourceTree = "<group>"; };
+		7B4560992A37B16100798505 /* ToastItemViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToastItemViewModel.swift; sourceTree = "<group>"; };
+		7B45609B2A37B65200798505 /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
+		7B45609F2A37C70000798505 /* DateFormatter+ExtensionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DateFormatter+ExtensionTests.swift"; sourceTree = "<group>"; };
+		7B49B4D12A39D86A0062670F /* ImageRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageRepository.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,16 +127,13 @@
 		138B497529068E41008295A1 /* Toast Catalog */ = {
 			isa = PBXGroup;
 			children = (
-				7B4560842A3791AF00798505 /* Data */,
 				138B497629068E41008295A1 /* AppDelegate.swift */,
 				138B497829068E41008295A1 /* SceneDelegate.swift */,
+				7B4560842A3791AF00798505 /* Data */,
 				7B4560782A378F0600798505 /* HTTPNetwork */,
 				7B4560752A378EAA00798505 /* Domain */,
-				138B497A29068E41008295A1 /* ItemsViewController.swift */,
-				138B49A82906959E008295A1 /* ItemTableViewCell.swift */,
-				138B49A92906959E008295A1 /* ItemTableViewCell.xib */,
-				138B49AF2906B6CC008295A1 /* ImageRepository.h */,
-				138B49B02906B6CC008295A1 /* ImageRepository.m */,
+				7B45608E2A37A9B800798505 /* Scenes */,
+				7B49B4D12A39D86A0062670F /* ImageRepository.swift */,
 				138B497F29068E43008295A1 /* Assets.xcassets */,
 				138B498129068E43008295A1 /* LaunchScreen.storyboard */,
 				138B498429068E43008295A1 /* Info.plist */,
@@ -141,6 +145,7 @@
 			isa = PBXGroup;
 			children = (
 				138B49B42906BC25008295A1 /* NetworkClientTests.swift */,
+				7B45609F2A37C70000798505 /* DateFormatter+ExtensionTests.swift */,
 			);
 			path = "Toast CatalogTests";
 			sourceTree = "<group>";
@@ -194,9 +199,54 @@
 		7B45608B2A37926E00798505 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
-				7B4560892A37926600798505 /* DateFormatter+Extensions.swift */,
+				7B4560892A37926600798505 /* DateFormatter+Extension.swift */,
 			);
 			path = Helpers;
+			sourceTree = "<group>";
+		};
+		7B45608E2A37A9B800798505 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				7B4560932A37B0A500798505 /* Presenter */,
+				7B45608F2A37A9BC00798505 /* ToastItem */,
+				138B497A29068E41008295A1 /* ItemsViewController.swift */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		7B45608F2A37A9BC00798505 /* ToastItem */ = {
+			isa = PBXGroup;
+			children = (
+				7B4560902A37A9D900798505 /* Helper */,
+				7B4560992A37B16100798505 /* ToastItemViewModel.swift */,
+			);
+			path = ToastItem;
+			sourceTree = "<group>";
+		};
+		7B4560902A37A9D900798505 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				7B4560912A37A9FF00798505 /* Locale+Extension.swift */,
+				7B45609B2A37B65200798505 /* String+Extension.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		7B4560932A37B0A500798505 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				7B4560962A37B0CD00798505 /* Protocols */,
+				7B4560972A37B0F400798505 /* ToastCatalogPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		7B4560962A37B0CD00798505 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				7B4560942A37B0BB00798505 /* ToastCatalogPresenterProtocol.swift */,
+			);
+			path = Protocols;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -306,7 +356,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				138B498329068E43008295A1 /* LaunchScreen.storyboard in Resources */,
-				138B49AB2906959E008295A1 /* ItemTableViewCell.xib in Resources */,
 				138B498029068E43008295A1 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -333,18 +382,22 @@
 			buildActionMask = 2147483647;
 			files = (
 				138B49AD29069997008295A1 /* Item.swift in Sources */,
-				138B49AA2906959E008295A1 /* ItemTableViewCell.swift in Sources */,
-				7B45608A2A37926600798505 /* DateFormatter+Extensions.swift in Sources */,
+				7B45608A2A37926600798505 /* DateFormatter+Extension.swift in Sources */,
+				7B4560922A37A9FF00798505 /* Locale+Extension.swift in Sources */,
+				7B4560982A37B0F400798505 /* ToastCatalogPresenter.swift in Sources */,
 				7B45607B2A378F5100798505 /* HTTPClient.swift in Sources */,
 				138B497B29068E41008295A1 /* ItemsViewController.swift in Sources */,
 				7B4560862A3791C600798505 /* Endpoint.swift in Sources */,
 				7B4560882A37920000798505 /* RequestMethod.swift in Sources */,
-				138B49B12906B6CC008295A1 /* ImageRepository.m in Sources */,
+				7B45609A2A37B16100798505 /* ToastItemViewModel.swift in Sources */,
+				7B45609C2A37B65200798505 /* String+Extension.swift in Sources */,
 				138B49B32906BB6B008295A1 /* ToastCatalogAdapter.swift in Sources */,
+				7B4560952A37B0BB00798505 /* ToastCatalogPresenterProtocol.swift in Sources */,
 				138B497729068E41008295A1 /* AppDelegate.swift in Sources */,
 				138B497929068E41008295A1 /* SceneDelegate.swift in Sources */,
 				7B45607D2A378FB400798505 /* RequestError.swift in Sources */,
 				7B45608D2A379E6A00798505 /* ToastCatalogEndpointTypePath.swift in Sources */,
+				7B49B4D22A39D86A0062670F /* ImageRepository.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -352,6 +405,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7B4560A02A37C70000798505 /* DateFormatter+ExtensionTests.swift in Sources */,
 				138B49B52906BC25008295A1 /* NetworkClientTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
