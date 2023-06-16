@@ -31,7 +31,7 @@ final class ItemsViewController: UITableViewController {
         })
     }
     
-    private func showModal(title: String, message: String) {
+    func showModal(title: String, message: String) {
         let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
         alert.addAction(UIAlertAction(title: "Ok", style: .default, handler: nil))
         self.present(alert, animated: true, completion: nil)
@@ -45,7 +45,7 @@ extension ItemsViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let item = presenter.toastItemViewModel?[indexPath.row]  else {
             return CustomTableViewCell()
-        }        
+        }
         let cell = CustomCellBuilder()
             .withIcon(item.image)
             .withTitle(item.name)
