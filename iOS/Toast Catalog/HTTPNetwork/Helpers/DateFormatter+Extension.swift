@@ -20,7 +20,7 @@ extension DateFormatter {
     // TODO: MAKE TESTS
    static func changeToSimpleDateHourAmPmFormatter(dateString: String) -> String {
         let dateFormatter = DateFormatter()
-        dateFormatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ss.SSSZZZZZ"
+        dateFormatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ss'Z'"
         dateFormatter.locale = Locale(identifier: "en_US")
         
         if let dateInput = dateFormatter.date(from: dateString) {

@@ -5,9 +5,9 @@
 //  Created by Matheus F S L Gomes on 12/06/23.
 //
 
-import Foundation
+import UIKit
 
-struct ToastItemViewModel {
+struct ToastItemViewModel: ToastItemViewModelProtocol {
     private let price: String
     private let currency: String
     private let lastSold: String
@@ -18,6 +18,15 @@ struct ToastItemViewModel {
     }
     var lastSoldFormatted: String {
         DateFormatter.changeToSimpleDateHourAmPmFormatter(dateString: lastSold)
+    }
+    var image: UIImage {
+        ImageRepository.imageForItemIdentifier(itemItentifier: id) ?? UIImage()
+    }
+    var subtitles: [String] {
+        [
+            priceNormalized,
+            lastSoldFormatted
+        ]
     }
     init(name: String, price: String, id: Int, currency: String, lastSold: String) {
         self.name = name

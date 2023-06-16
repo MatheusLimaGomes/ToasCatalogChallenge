@@ -7,7 +7,8 @@
 
 import Foundation
 protocol ToastCatalogPresenterProtocol: AnyObject {
-    var toastItemViewModel: [ToastItemViewModel]? { get }
+    var cellID: String { get }
+    var toastItemViewModel: [ToastItemViewModelProtocol]? { get }
     var service: ToastCatalogServiceable { get }
     func getItems(completion: @escaping(Result<Void, RequestError>) -> Void)
 }

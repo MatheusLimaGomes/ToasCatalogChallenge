@@ -9,7 +9,8 @@ import Foundation
 
 
 final class ToastCatalogPresenter: ToastCatalogPresenterProtocol {
-    var toastItemViewModel: [ToastItemViewModel]?
+    var cellID = "GenericTableViewCell"
+    var toastItemViewModel: [ToastItemViewModelProtocol]?
     private let viewModelMapper: ToastViewModelMapper
     let service: ToastCatalogServiceable
     init(service: ToastCatalogServiceable,
@@ -27,19 +28,6 @@ final class ToastCatalogPresenter: ToastCatalogPresenterProtocol {
             case .failure(let error):
                 completion(.failure(error))
             }
-        }
-    }
-}
-
-
-final class ToastViewModelMapper {
-    func mapItemsToViewModels(_ items: [ToastCatalogItem]) -> [ToastItemViewModel] {
-        items.map { item in
-            ToastItemViewModel(name: item.name,
-                               price: item.price,
-                               id: item.id,
-                               currency: item.currency,
-                               lastSold: item.lastSold)
         }
     }
 }

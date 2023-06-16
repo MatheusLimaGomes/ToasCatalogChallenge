@@ -1,12 +1,16 @@
 import UIKit
 
 final class ItemsViewController: UITableViewController {
-    var presenter: ToastCatalogPresenterProtocol?
-    private let cellID = "toastCellID"
+    let presenter: ToastCatalogPresenterProtocol
+    init(presenter: ToastCatalogPresenterProtocol) {
+        self.presenter = presenter
+        super.init(nibName: nil, bundle: nil)
+    }
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
-        tableView.register(UITableViewCell.self,
-                           forCellReuseIdentifier: self.cellID)
         loadTableView()
     }
     override func didReceiveMemoryWarning() {
@@ -14,7 +18,7 @@ final class ItemsViewController: UITableViewController {
     }
     
     func loadTableView(completion: (()-> Void)? = nil) {
-        presenter?.getItems(completion: { [weak self] result in
+        presenter.getItems(completion: { [weak self] result in
             guard let self = self else { return }
             switch result {
             case.success:
@@ -36,17 +40,17 @@ final class ItemsViewController: UITableViewController {
 }
 extension ItemsViewController {
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        presenter?.toastItemViewModel?.count ?? 0
+        presenter.toastItemViewModel?.count ?? 0
     }
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: cellID, for: indexPath)
-        var content = cell.defaultContentConfiguration()
-        let item = presenter?.toastItemViewModel?[indexPath.row]
-        content.text = item?.name
-        content.secondaryText = item?.priceNormalized
-        content.image = ImageRepository.imageForItemIdentifier(itemItentifier: Int(item?.id ?? -1))
-        content.imageProperties.tintColor = UIColor(named: "ImagesBackground")
-        cell.contentConfiguration = content
-        return cell
+        guard let item = presenter.toastItemViewModel?[indexPath.row]  else {
+            return CustomTableViewCell()
+        }        
+        let cell = CustomCellBuilder()
+            .withIcon(item.image)
+            .withTitle(item.name)
+            .withSubtitle([item.priceNormalized,
+                           item.lastSoldFormatted])
+        return cell.build()
     }
 }
